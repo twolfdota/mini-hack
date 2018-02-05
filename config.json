@@ -1,0 +1,4 @@
+{
+    "port": 5555,
+    "dbUrl": "mongodb://localhost:27017/minihack"
+}

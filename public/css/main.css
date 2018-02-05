@@ -1,0 +1,70 @@
+#content {
+    border: 1px solid black;
+    min-height: 70px;
+    padding: 5px;
+}
+
+#result ul {
+    list-style-type: none;
+}
+
+#result ul li {
+    display: inline-block;
+    margin: 10px 10px;
+}
+
+#result button {
+    font-size: 17px;
+    padding: 5px 10px;
+    min-width: 43px;
+    border: 2px solid black;
+    border-radius: 5px;
+    background: white;
+}
+
+#result button:hover {
+    cursor: pointer;
+    background-color: blue;
+}
+
+#result input {
+    font-size: 20px;
+    width: 45px;
+    margin: 5px 5px;
+}
+
+#error {
+    color: red;
+}
+
+#chart-data ul {
+    list-style-type: none;
+}
+
+#chart-data ul li img{
+    width:100%;
+}
+
+#chart-data ul li img:hover{
+    cursor:pointer;
+}
+
+.modal-dialog {
+    width: 90%;
+    height: 80%;
+    margin: 5%;
+    padding: 0;
+}
+
+.modal-content {
+    height: auto;
+    min-height: 100%;
+    border-radius: 0;
+}
+.modal-body span {
+    font-size:25px;
+}
+.modal-content img {
+    width:80%;
+    height:60%;
+}

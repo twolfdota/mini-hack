@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="/bootstrap/dist/css/bootstrap.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <link rel="stylesheet" type="text/css" href="/css/main.css" />
+    <script type="text/javascript" src="/script/game.js"></script>
+    <title>Mini hack</title>
+</head>
+
+<body>
+    <!--đang ở câu hỏi số mấy -->
+    <input type="hidden" value="1" id="questnumb">
+    <!--nơi lưu số điểm từng câu hỏi -->
+    <input type="hidden" value="0" name="q1" id="q1">
+    <input type="hidden" value="0" name="q2" id="q2">
+    <input type="hidden" value="0" name="q3" id="q3">
+    <input type="hidden" value="0" name="q4" id="q4">
+    <input type="hidden" value="0" name="q5" id="q5">
+    <input type="hidden" value="0" name="q6" id="q6">
+    <!-- <form action="" method="post"> -->
+    <h1 class="game-over">Điểm số:
+        <span id="point">0</span>/30</h1>
+    <p id="content">Chọn một số trong khoảng từ 1 đến 10. Nếu có ít hơn 17% số người chơi cũng chọn số đó, bạn sẽ ghi điểm bằng với số bạn
+        chọn
+    </p>
+    <p class="game-over">Câu trả lời</p>
+    <div id="result">
+        <ul>
+            <li>
+                <button value="1" name="answer" class="answer">1</button>
+            </li>
+            <li>
+                <button value="2" name="answer" class="answer">2</button>
+            </li>
+            <li>
+                <button value="3" name="answer" class="answer">3</button>
+            </li>
+            <li>
+                <button value="4" name="answer" class="answer">4</button>
+            </li>
+            <li>
+                <button value="5" name="answer" class="answer">5</button>
+            </li>
+            <li>
+                <button value="6" name="answer" class="answer">6</button>
+            </li>
+            <li>
+                <button value="7" name="answer" class="answer">7</button>
+            </li>
+            <li>
+                <button value="8" name="answer" class="answer">8</button>
+            </li>
+            <li>
+                <button value="9" name="answer" class="answer">9</button>
+            </li>
+            <li>
+                <button value="10" name="answer" class="answer">10</button>
+            </li>
+
+        </ul>
+    </div>
+    <span id="error"></span>
+    <div id="chart-data">
+        <ul>
+            <li id="chart1" class="pop col-xs-12 col-sm-6 col-md-4"></li>
+            <li id="chart2" class="pop col-xs-12 col-sm-6 col-md-4"></li>
+            <li id="chart3" class="pop col-xs-12 col-sm-6 col-md-4"></li>
+            <li id="chart5" class="pop col-xs-12 col-sm-6 col-md-4"></li>
+            <li id="chart6" class="pop col-xs-12 col-sm-6 col-md-4"></li>
+        </ul>
+    </div>
+
+    <div class="modal fade" id="chart-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal">
+                        <span aria-hidden="true">&times;</span>
+                        <span class="sr-only">Close</span>
+                    </button>
+                    <center>
+                        <div class="preview" style="width: 100%;"></div>
+                    </center>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- </form> -->
+</body>
+
+</html>
